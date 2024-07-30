@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: deneme2
+    env: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/deneme2-0.0.1-SNAPSHOT.jar
+    plan: free
+    timeout: 15m
