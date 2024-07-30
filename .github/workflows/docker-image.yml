@@ -25,5 +25,4 @@ jobs:
 
     - name: Build Docker image
       working-directory: deneme3/deneme2
-- name: Build Docker image
-  run: docker build -t deneme2:latest .
+      run: docker build -t deneme2:latest .
