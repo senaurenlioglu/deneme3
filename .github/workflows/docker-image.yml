@@ -1,5 +1,4 @@
-name: Docker Image CI
-
+name: Build and Deploy Docker image
 
 on:
   push:
@@ -20,9 +19,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
-      working-directory: deneme3/deneme2
       run: mvn clean package
 
     - name: Build Docker image
-      working-directory: deneme3/deneme2
       run: docker build -t deneme2:latest .
